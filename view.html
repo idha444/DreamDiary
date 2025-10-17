@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dreams 📖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Saved Dreams 📖</h1>
+    <div id="dreamList" class="dream-list"></div>
+    <a href="index.html" class="back">← Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Stars Background -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 3 + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+</body>
+</html>

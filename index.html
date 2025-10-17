@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamDiary 🌙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌙 DreamDiary</h1>
+    <p>Capture your dreams and revisit them anytime.</p>
+    <div class="buttons">
+      <a href="write.html" class="btn">Write a Dream</a>
+      <a href="view.html" class="btn">View Dreams</a>
+    </div>
+  </div>
+
+  <!-- Stars Background -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 3 + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+</body>
+</html>
